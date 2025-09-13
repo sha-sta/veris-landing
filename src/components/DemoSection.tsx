@@ -61,8 +61,8 @@ const DemoSection = () => {
                   </p>
                   <p className="text-md text-foreground mb-3">
                     The link "https://paypa1.verify-account.com/login" is a
-                    deceptive URL designed to mimic PayPal by replacing the "l"
-                    with "1".
+                    deceptive URL designed to mimic PayPal by replacing the
+                    letter "l" with the number "1".
                   </p>
                   <div className="space-y-2 text-sm text-muted-foreground">
                     <div className="flex items-center gap-2">
@@ -108,10 +108,10 @@ const DemoSection = () => {
                 <CheckCircle className="w-6 h-6 text-success flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-2xl text-success mb-4">
-                    Website Verified Safe
+                    Email Verified Safe
                   </h3>
                   <p className="text-md text-foreground mb-3">
-                    This website "e.legalzoom.com" (a LegalZoom marketing
+                    This email from "e.legalzoom.com" (a LegalZoom marketing
                     subdomain of legalzoom.com) is verified as an official
                     LegalZoom sending domain.
                   </p>
