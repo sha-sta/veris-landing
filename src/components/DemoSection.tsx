@@ -39,7 +39,7 @@ const DemoSection = () => {
                     This email uses urgent language like "immediate action required" and "verify account now" 
                     to create panic. The sender domain "bank-security@secure-verify.net" is not from your actual bank.
                   </p>
-                  <div className="space-y-2 text-xs">
+                  <div className="space-y-2 text-xs text-foreground">
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-destructive rounded-full" />
                       Suspicious sender domain
@@ -80,7 +80,7 @@ const DemoSection = () => {
                     This website "amazon.com" is the official Amazon domain with proper security certificates. 
                     No suspicious redirects or typos detected.
                   </p>
-                  <div className="space-y-2 text-xs">
+                  <div className="space-y-2 text-xs text-foreground">
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-success rounded-full" />
                       Official domain verified

@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">Product</h3>
+            <h3 className="font-semibold mb-4 text-foreground">Product</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-colors">Chrome Extension</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Web Scanner</a></li>
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">Resources</h3>
+            <h3 className="font-semibold mb-4 text-foreground">Resources</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-colors">Safety Tips</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Common Scams</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">Connect</h3>
+            <h3 className="font-semibold mb-4 text-foreground">Connect</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-colors">Contact Us</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Partner With Us</a></li>

@@ -22,7 +22,7 @@ const SocialImpactSection = () => {
                   <Heart className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Seniors-First Design</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">Seniors-First Design</h3>
                   <p className="text-muted-foreground">
                     Every feature is designed with seniors in mind - larger text, clear explanations, 
                     and no confusing technical jargon.
@@ -35,7 +35,7 @@ const SocialImpactSection = () => {
                   <Users className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Community Centers & Nonprofits</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">Community Centers & Nonprofits</h3>
                   <p className="text-muted-foreground">
                     We partner with local organizations to provide free digital safety workshops 
                     and training sessions for seniors.
@@ -48,7 +48,7 @@ const SocialImpactSection = () => {
                   <GraduationCap className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Teens Teach Tech Partnership</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">Teens Teach Tech Partnership</h3>
                   <p className="text-muted-foreground">
                     Our founder's experience working with seniors through Teens Teach Tech 
                     directly influenced every aspect of SecureGuard AI's design.
@@ -65,7 +65,7 @@ const SocialImpactSection = () => {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   "Having worked directly with seniors teaching technology skills, I've seen firsthand 
                   how targeted and sophisticated scams have become. SecureGuard AI exists to level 
@@ -82,7 +82,7 @@ const SocialImpactSection = () => {
         </div>
 
         <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">
+          <h3 className="text-2xl font-bold mb-4 text-foreground">
             Join Our Mission to Protect Seniors Online
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">

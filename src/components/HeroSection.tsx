@@ -43,7 +43,7 @@ const HeroSection = () => {
               <p className="text-sm text-muted-foreground mb-4">
                 Protecting against the $3.1 billion lost to scams in 2022
               </p>
-              <div className="flex items-center gap-6 text-sm">
+              <div className="flex items-center gap-6 text-sm text-foreground">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full" />
                   Chrome Extension

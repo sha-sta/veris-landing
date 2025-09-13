@@ -80,14 +80,14 @@ const HowItWorksSection = () => {
 
         <div className="mt-16 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 text-center">
           <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl font-bold mb-4 text-foreground">
               Protection in Seconds, Peace of Mind Forever
             </h3>
             <p className="text-muted-foreground mb-6">
               Our technology combines the latest AI advances with human-centered design 
               to give you confidence in every digital interaction.
             </p>
-            <div className="flex justify-center gap-4 text-sm">
+            <div className="flex justify-center gap-4 text-sm text-foreground">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary rounded-full" />
                 Instant Results
