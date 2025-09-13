@@ -7,33 +7,39 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-              <Shield className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold">SecureGuard AI</span>
+            <h1 className="text-2xl font-bold">v e r i s</h1>
           </div>
-          
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+
+          <nav className="hidden md:flex items-center justify-center gap-8">
+            <a
+              href="#features"
+              className="text-foreground hover:text-foreground transition-colors cursor-pointer"
+            >
               Features
             </a>
-            <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+            <a
+              href="#how-it-works"
+              className="text-foreground hover:text-foreground transition-colors cursor-pointer"
+            >
               How It Works
             </a>
-            <a href="#demo" className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+            <a
+              href="#demo"
+              className="text-foreground hover:text-foreground transition-colors cursor-pointer"
+            >
               Demo
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+            <a
+              href="#about"
+              className="text-foreground hover:text-foreground transition-colors cursor-pointer"
+            >
               About
             </a>
           </nav>
-          
+
           <div className="flex items-center gap-4">
-            <Button variant="scan" className="hidden sm:inline-flex">
-              Scan Now
-            </Button>
             <Button variant="hero" className="hidden sm:inline-flex">
-              Get Extension
+              Install Extension
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="w-5 h-5" />

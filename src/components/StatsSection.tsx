@@ -6,46 +6,46 @@ const StatsSection = () => {
       icon: DollarSign,
       value: "$3.1B",
       label: "Lost to scams in 2022",
-      description: "Total financial losses from email scams, calls, and texts"
+      description: "Total financial losses from email scams, calls, and texts",
     },
     {
       icon: Users,
       value: "$335M",
       label: "Lost by adults 60-69",
-      description: "January-March 2025 losses in this age group alone"
+      description: "January-March 2025 losses in this age group alone",
     },
     {
       icon: TrendingUp,
       value: "300%",
       label: "Increase in phishing",
-      description: "Rise in sophisticated emotion-baiting scams"
+      description: "Rise in sophisticated emotion-baiting scams",
     },
     {
       icon: AlertTriangle,
       value: "1 in 4",
       label: "Seniors targeted",
-      description: "Seniors receive 4x more scam attempts than younger adults"
-    }
+      description: "Seniors receive 4x more scam attempts than younger adults",
+    },
   ];
 
   return (
-    <section className="py-16 bg-muted/30">
+    <section className="pt-36 pb-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            The Growing Threat of Digital Scams
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+            The threat of digital scams is real, and it's growing.
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          {/* <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             These alarming statistics show why advanced protection is more critical than ever
-          </p>
+          </p> */}
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="text-center group hover:bg-card hover:shadow-lg rounded-xl p-6 transition-all duration-300"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 text-primary rounded-full mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
@@ -54,10 +54,10 @@ const StatsSection = () => {
                 <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
                   {stat.value}
                 </div>
-                <div className="font-semibold text-foreground mb-2">
+                <div className="font-semibold text-foreground text-lg mb-2">
                   {stat.label}
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-md text-muted-foreground leading-relaxed">
                   {stat.description}
                 </p>
               </div>

@@ -6,26 +6,30 @@ const HowItWorksSection = () => {
       icon: Upload,
       number: "1",
       title: "Paste email or URL",
-      description: "Copy and paste any suspicious email content or website URL into our secure scanner."
+      description:
+        "Copy and paste any suspicious email content or website URL into our secure scanner.",
     },
     {
       icon: Scan,
       title: "AI + Safe Browsing API check",
-      number: "2", 
-      description: "Our advanced AI analyzes the content while Google's Safe Browsing API checks for known threats."
+      number: "2",
+      description:
+        "Our advanced AI analyzes the content while Google's Safe Browsing API checks for known threats.",
     },
     {
       icon: Shield,
       title: "Risk score + explanation",
       number: "3",
-      description: "Get an instant color-coded risk level with a clear explanation of any threats found."
+      description:
+        "Get an instant color-coded risk level with a clear explanation of any threats found.",
     },
     {
       icon: Lightbulb,
       title: "Tips to stay safe",
       number: "4",
-      description: "Learn specific steps to protect yourself and recognize similar threats in the future."
-    }
+      description:
+        "Learn specific steps to protect yourself and recognize similar threats in the future.",
+    },
   ];
 
   return (
@@ -33,7 +37,7 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            How SecureGuard AI Works
+            How Veris Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Four simple steps to comprehensive protection against digital scams
@@ -45,7 +49,7 @@ const HowItWorksSection = () => {
             {steps.map((step, index) => {
               const Icon = step.icon;
               const isLast = index === steps.length - 1;
-              
+
               return (
                 <div key={index} className="relative">
                   <div className="text-center group">
@@ -57,16 +61,16 @@ const HowItWorksSection = () => {
                         {step.number}
                       </div>
                     </div>
-                    
+
                     <h3 className="text-xl font-semibold mb-3 text-foreground">
                       {step.title}
                     </h3>
-                    
+
                     <p className="text-muted-foreground leading-relaxed">
                       {step.description}
                     </p>
                   </div>
-                  
+
                   {!isLast && (
                     <div className="hidden lg:block absolute top-10 -right-4 z-10">
                       <ArrowRight className="w-8 h-8 text-muted-foreground" />
@@ -84,8 +88,8 @@ const HowItWorksSection = () => {
               Protection in Seconds, Peace of Mind Forever
             </h3>
             <p className="text-muted-foreground mb-6">
-              Our technology combines the latest AI advances with human-centered design 
-              to give you confidence in every digital interaction.
+              Our technology combines the latest AI advances with human-centered
+              design to give you confidence in every digital interaction.
             </p>
             <div className="flex justify-center gap-4 text-sm text-foreground">
               <div className="flex items-center gap-2">

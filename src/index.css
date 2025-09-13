@@ -17,8 +17,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
+  --primary: 142 65% 44%;
+  --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,8 +26,8 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 100%;
+  --accent: 142 50% 34%;
+  --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -42,28 +42,29 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 217 91% 60%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
-    --trust-gradient: linear-gradient(180deg, hsl(217 91% 95%), hsl(0 0% 100%));
-    --card-shadow: 0 4px 20px hsl(217 91% 60% / 0.1);
-    --glow-shadow: 0 0 30px hsl(217 91% 60% / 0.3);
+  --hero-gradient: linear-gradient(135deg, hsl(142 65% 44%), hsl(142 50% 34%));
+  --trust-gradient: linear-gradient(180deg, hsl(142 95% 96%), hsl(0 0% 100%));
+  --card-shadow: 0 4px 20px hsl(142 65% 44% / 0.10);
+  --glow-shadow: 0 0 30px hsl(142 65% 44% / 0.28);
+  --ring: 142 65% 44%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-foreground: 142 8% 18%;
 
-    --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary: 142 10% 14%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-primary-foreground: 0 0% 98%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent: 142 8% 94%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-accent-foreground: 142 8% 14%;
 
-    --sidebar-border: 220 13% 91%;
+  --sidebar-border: 142 12% 92%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  --sidebar-ring: 142 65% 44%;
   }
 
   .dark {
@@ -76,8 +77,8 @@ All colors MUST be HSL.
     --popover: 217.2 32.6% 17.5%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
+  --primary: 142 53% 38%;
+  --primary-foreground: 0 0% 100%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -85,8 +86,8 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 100%;
+  --accent: 142 38% 26%;
+  --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -101,19 +102,20 @@ All colors MUST be HSL.
     --input: 217.2 32.6% 17.5%;
     --ring: 217 91% 60%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
-    --trust-gradient: linear-gradient(180deg, hsl(217.2 32.6% 17.5%), hsl(222.2 84% 4.9%));
-    --card-shadow: 0 4px 20px hsl(0 0% 0% / 0.3);
-    --glow-shadow: 0 0 30px hsl(217 91% 60% / 0.4);
+  --hero-gradient: linear-gradient(135deg, hsl(142 53% 38%), hsl(142 38% 26%));
+  --trust-gradient: linear-gradient(180deg, hsl(217.2 32.6% 17.5%), hsl(222.2 84% 4.9%));
+  --card-shadow: 0 4px 20px hsl(0 0% 0% / 0.28);
+  --glow-shadow: 0 0 30px hsl(142 53% 38% / 0.47);
+  --ring: 142 53% 38%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  --sidebar-background: 142 6% 10%;
+  --sidebar-foreground: 142 6% 96%;
+  --sidebar-primary: 142 10% 20%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 142 6% 18%;
+  --sidebar-accent-foreground: 142 6% 96%;
+  --sidebar-border: 142 6% 15.9%;
+  --sidebar-ring: 142 53% 38%;
   }
 }
 
@@ -130,3 +132,11 @@ All colors MUST be HSL.
     scroll-behavior: smooth;
   }
 }
+  /* Custom font color for paragraph text */
+  p {
+    color: hsl(var(--foreground));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(var(--foreground));
+  }

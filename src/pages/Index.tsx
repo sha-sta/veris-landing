@@ -4,7 +4,6 @@ import StatsSection from "@/components/StatsSection";
 import DemoSection from "@/components/DemoSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
-import SocialImpactSection from "@/components/SocialImpactSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -23,12 +22,9 @@ const Index = () => {
         <section id="features">
           <FeaturesSection />
         </section>
-        <section id="how-it-works">
+        {/* <section id="how-it-works">
           <HowItWorksSection />
-        </section>
-        <section id="about">
-          <SocialImpactSection />
-        </section>
+        </section> */}
         <CTASection />
       </main>
       <Footer />
