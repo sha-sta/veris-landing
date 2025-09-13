@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, ArrowRight, Check } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeInUp, popIn, staggerContainer } from "@/lib/motion";
 import heroImage from "@/assets/gmail_pic.jpg";
 
 const HeroSection = () => {
@@ -8,13 +10,22 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10" />
       <div className="relative container mx-auto px-4 py-40 lg:py-52">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 bg-accent/80 text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+          <motion.div
+            className="space-y-8"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <motion.div
+              className="inline-flex items-center gap-2 bg-accent/80 text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-sm"
+              variants={popIn}
+            >
               <Check className="w-4 h-4" />
               Completely Free
-            </div>
+            </motion.div>
 
-            <div className="space-y-10">
+            <motion.div className="space-y-10" variants={fadeInUp}>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                 Your personal digital security consultant.
               </h1>
@@ -22,14 +33,17 @@ const HeroSection = () => {
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
                 Real-time scam detection, cyber protection, and education.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4"
+              variants={fadeInUp}
+            >
               <Button variant="hero" size="lg" className="group">
                 Install Extension
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-            </div>
+            </motion.div>
             {/* 
             <div className="pt-8 border-t border-border/50">
               <div className="flex items-center gap-6 text-sm text-foreground">
@@ -47,14 +61,29 @@ const HeroSection = () => {
                 </div>
               </div>
             </div> */}
-          </div>
+          </motion.div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl -z-10" />
-            <img
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl -z-10"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            />
+            <motion.img
               src={heroImage}
               alt="Product dashboard preview"
               className="w-full h-auto rounded-2xl shadow-2xl"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ y: [0, -8, 0] }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{
+                duration: 0.8,
+                ease: [0.16, 1, 0.3, 1],
+                y: { duration: 6, repeat: Infinity, ease: [0.16, 1, 0.3, 1] },
+              }}
             />
           </div>
         </div>

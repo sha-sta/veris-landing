@@ -1,4 +1,6 @@
 import { MousePointer, BookOpen, Shield, CreditCard } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeInUp, popIn, staggerContainer } from "@/lib/motion";
 
 const FeaturesSection = () => {
   const features = [
@@ -31,27 +33,40 @@ const FeaturesSection = () => {
   return (
     <section className="py-16 lg:py-24">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Powerful protection made simple.
           </h2>
-          {/* <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Advanced AI technology designed specifically for the unique needs of
-            seniors
-          </p> */}
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <motion.div
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <div
+              <motion.div
                 key={index}
                 className="bg-card rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 group border border-border/50"
+                variants={fadeInUp}
+                whileHover={{ y: -4 }}
               >
-                <div className="w-16 h-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                <motion.div
+                  className="w-16 h-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors"
+                  variants={popIn}
+                >
                   <Icon className="w-8 h-8" />
-                </div>
+                </motion.div>
 
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">
                   {feature.title}
@@ -60,10 +75,10 @@ const FeaturesSection = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-6 py-3 rounded-full">

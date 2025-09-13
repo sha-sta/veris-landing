@@ -1,26 +1,49 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Download, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeInUp, popIn, staggerContainer } from "@/lib/motion";
 
 const CTASection = () => {
   return (
-    <section id="cta" className="py-16 lg:py-24 bg-gradient-to-b from-primary to-accent">
+    <section
+      id="cta"
+      className="py-16 lg:py-24 bg-gradient-to-b from-primary to-accent"
+    >
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-medium mb-8">
+        <motion.div
+          className="max-w-4xl mx-auto text-center text-white"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.div
+            className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-medium mb-8"
+            variants={popIn}
+          >
             <Shield className="w-4 h-4" />
             Free Chrome Extension
-          </div>
+          </motion.div>
 
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+          <motion.h2
+            className="text-3xl lg:text-5xl font-bold mb-6"
+            variants={fadeInUp}
+          >
             Don't let scammers win.
-          </h2>
+          </motion.h2>
 
-          <p className="text-xl lg:text-2xl mb-8 text-white/90 leading-relaxed">
+          <motion.p
+            className="text-xl lg:text-2xl mb-8 text-white/90 leading-relaxed"
+            variants={fadeInUp}
+          >
             Join our community at Veris to protect your digital life. Start
             scanning emails, websites, and files today.
-          </p>
+          </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+            variants={fadeInUp}
+          >
             <Button
               variant="secondary"
               size="lg"
@@ -30,7 +53,7 @@ const CTASection = () => {
               Install Extension
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-          </div>
+          </motion.div>
 
           {/* <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
@@ -47,13 +70,16 @@ const CTASection = () => {
             </div>
           </div> */}
 
-          <div className="mt-12 pt-8 border-t border-white/20">
+          <motion.div
+            className="mt-12 pt-8 border-t border-white/20"
+            variants={fadeInUp}
+          >
             <p className="text-white/80 text-sm">
               Free to use • No personal data collected • Works with Gmail on
               Chrome.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
