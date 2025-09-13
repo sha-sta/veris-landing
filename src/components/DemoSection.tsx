@@ -107,7 +107,7 @@ const DemoSection = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-success flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-2xl text-success mb-2">
+                  <h3 className="font-semibold text-2xl text-success mb-4">
                     Website Verified Safe
                   </h3>
                   <p className="text-md text-foreground mb-3">
