@@ -41,7 +41,7 @@ const StatsSection = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            The threat of digital scams is real, and it's growing.
+            The threat of digital scams is growing.
           </h2>
         </motion.div>
 

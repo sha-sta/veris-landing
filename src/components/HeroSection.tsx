@@ -63,29 +63,24 @@ const HeroSection = () => {
             </div> */}
           </motion.div>
 
-          <div className="relative">
+          <motion.div className="relative overflow-hidden rounded-2xl">
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl -z-10"
-              initial={{ opacity: 0 }}
+              className="pointer-events-none absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl -z-10"
+              initial={{ opacity: 0, scale: 1 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             />
             <motion.img
               src={heroImage}
               alt="Product dashboard preview"
               className="w-full h-auto rounded-2xl shadow-2xl"
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              animate={{ y: [0, -8, 0] }}
+              initial={{ opacity: 0, scale: 0.96 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{
-                duration: 0.8,
-                ease: [0.16, 1, 0.3, 1],
-                y: { duration: 6, repeat: Infinity, ease: [0.16, 1, 0.3, 1] },
-              }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
