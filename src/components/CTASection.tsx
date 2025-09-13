@@ -3,7 +3,7 @@ import { Shield, Download, ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-b from-primary to-accent">
+    <section id="cta" className="py-16 lg:py-24 bg-gradient-to-b from-primary to-accent">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center text-white">
           <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-medium mb-8">
