@@ -6,25 +6,25 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: MousePointer,
-      title: "One-click scam detection",
+      title: "One-click scam detection.",
       description:
         "Simply hit the 'scan' button and get instant results. No technical knowledge required.",
     },
     {
       icon: BookOpen,
-      title: "Simple explanations",
+      title: "Simple explanations.",
       description:
-        "Clear, jargon-free explanations help you understand exactly why something is dangerous and what to look for next time.",
+        "Clear explanations help you understand exactly why something is dangerous and what to look out for next time.",
     },
     {
       icon: Shield,
-      title: "Learn as you go",
+      title: "Learn as you go.",
       description:
         "Each scan teaches you something new about online safety, building your confidence and protecting you long-term.",
     },
     {
       icon: CreditCard,
-      title: "Protects your finances",
+      title: "Protects your finances.",
       description:
         "Specifically designed to catch financial scams that target seniors, from fake bank emails to investment frauds.",
     },

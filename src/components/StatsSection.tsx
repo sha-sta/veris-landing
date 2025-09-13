@@ -7,26 +7,26 @@ const StatsSection = () => {
     {
       icon: DollarSign,
       value: "$3.1B",
-      label: "Lost to scams in 2022",
-      description: "Total financial losses from email scams, calls, and texts",
+      label: "lost to scams in 2022.",
+      description: "Total financial losses from email scams, calls, and texts.",
     },
     {
       icon: Users,
       value: "$335M",
-      label: "Lost by adults 60-69",
-      description: "January-March 2025 losses in this age group alone",
+      label: "lost by adults 60-69.",
+      description: "January-March 2025 losses in this age group alone.",
     },
     {
       icon: TrendingUp,
       value: "300%",
-      label: "Increase in phishing",
-      description: "Rise in sophisticated emotion-baiting scams",
+      label: "increase in phishing.",
+      description: "Rise in sophisticated emotion-baiting scams.",
     },
     {
       icon: AlertTriangle,
       value: "1 in 4",
-      label: "Seniors targeted",
-      description: "Seniors receive 4x more scam attempts than younger adults",
+      label: "seniors targeted.",
+      description: "Seniors receive 4x more scam attempts than younger adults.",
     },
   ];
 
