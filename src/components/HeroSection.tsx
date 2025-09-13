@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, ArrowRight, Check } from "lucide-react";
+import { Chrome, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, popIn, staggerContainer } from "@/lib/motion";
 import heroImage from "@/assets/gmail_pic.jpg";
@@ -21,8 +21,8 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 bg-accent/80 text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-sm"
               variants={popIn}
             >
-              <Check className="w-4 h-4" />
-              Completely Free
+              <Chrome className="w-4 h-4" />
+              Free Chrome Extension
             </motion.div>
 
             <motion.div className="space-y-10" variants={fadeInUp}>

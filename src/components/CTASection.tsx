@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Download, ArrowRight } from "lucide-react";
+import { Chrome, Download, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, popIn, staggerContainer } from "@/lib/motion";
 
@@ -21,7 +21,7 @@ const CTASection = () => {
             className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-medium mb-8"
             variants={popIn}
           >
-            <Shield className="w-4 h-4" />
+            <Chrome className="w-4 h-4" />
             Free Chrome Extension
           </motion.div>
 
