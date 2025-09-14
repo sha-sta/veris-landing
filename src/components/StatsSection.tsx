@@ -6,27 +6,23 @@ const StatsSection = () => {
   const stats = [
     {
       icon: DollarSign,
-      value: "$3.1B",
-      label: "lost to scams in 2022.",
-      description: "Total financial losses from email scams, calls, and texts.",
+      value: "$12.5B",
+      label: "lost to scams in 2024 alone.",
     },
     {
       icon: Users,
       value: "$335M",
-      label: "lost by adults 60-69.",
-      description: "January-March 2025 losses in this age group alone.",
+      label: "lost by adults 60-69 in the last 3 months.",
     },
     {
       icon: TrendingUp,
-      value: "300%",
-      label: "increase in phishing.",
-      description: "Rise in sophisticated emotion-baiting scams.",
+      value: "500%",
+      label: "increase in phishing since 2020.",
     },
     {
       icon: AlertTriangle,
-      value: "1 in 4",
-      label: "seniors targeted.",
-      description: "Seniors receive 4x more scam attempts than younger adults.",
+      value: "4x",
+      label: "more likely for senior citizens to be targeted.",
     },
   ];
 
@@ -72,9 +68,6 @@ const StatsSection = () => {
                 <div className="font-semibold text-foreground text-lg mb-2">
                   {stat.label}
                 </div>
-                <p className="text-md text-muted-foreground leading-relaxed">
-                  {stat.description}
-                </p>
               </motion.div>
             );
           })}

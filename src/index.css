@@ -134,6 +134,20 @@ All colors MUST be HSL.
     scroll-behavior: smooth;
   }
 }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+  @apply bg-background text-foreground font-mono;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   /* Custom font color for paragraph text */
   p {
     color: hsl(var(--foreground));
@@ -142,3 +156,21 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     color: hsl(var(--foreground));
   }
+
+  /* 3D Card Flip Utilities */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}

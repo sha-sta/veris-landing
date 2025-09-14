@@ -27,7 +27,7 @@ const HeroSection = () => {
 
             <motion.div className="space-y-10" variants={fadeInUp}>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                Your personal digital security consultant.
+                Your personal digital security advocate.
               </h1>
 
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">

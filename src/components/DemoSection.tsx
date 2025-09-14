@@ -48,7 +48,7 @@ const DemoSection = () => {
               </motion.div>
             </div>
 
-            <div className="bg-card border-l-4 border-l-destructive p-6 rounded-lg">
+            <div className="bg-white/70 border-l-4 border-l-destructive p-6 rounded-lg">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
                 <div>
@@ -103,7 +103,7 @@ const DemoSection = () => {
               </motion.div>
             </div>
 
-            <div className="bg-card border-l-4 border-l-success p-6 rounded-lg">
+            <div className="bg-white/70 border-l-4 border-l-success p-6 rounded-lg">
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-success flex-shrink-0 mt-1" />
                 <div>

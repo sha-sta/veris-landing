@@ -57,24 +57,28 @@ const FeaturesSection = () => {
             return (
               <motion.div
                 key={index}
-                className="bg-card rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 group border border-border/50"
+                className="group h-64 perspective-1000"
                 variants={fadeInUp}
-                whileHover={{ y: -4 }}
               >
-                <motion.div
-                  className="w-16 h-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors"
-                  variants={popIn}
-                >
-                  <Icon className="w-8 h-8" />
-                </motion.div>
+                <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front of card */}
+                  <div className="absolute inset-0 w-full h-full backface-hidden bg-white/70 rounded-xl p-8 pt-12 shadow-sm border border-border/50 flex flex-col items-center text-center">
+                    <div className="w-16 h-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 transition-colors">
+                      <Icon className="w-8 h-8" />
+                    </div>
 
-                <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                  {feature.title}
-                </h3>
+                    <h3 className="text-2xl font-semibold text-foreground">
+                      {feature.title}
+                    </h3>
+                  </div>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  {feature.description}
-                </p>
+                  {/* Back of card */}
+                  <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-white/70 rounded-xl p-8 shadow-lg flex flex-col items-center justify-center text-center">
+                    <p className="text-muted-foreground leading-relaxed text-base">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
               </motion.div>
             );
           })}
