@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Chrome, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, popIn, staggerContainer } from "@/lib/motion";
-import heroImage from "@/assets/gmail_pic.jpg";
+import verisDemo from "@/assets/veris_demo.mov";
 
 const HeroSection = () => {
   return (
@@ -71,9 +71,12 @@ const HeroSection = () => {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             />
-            <motion.img
-              src={heroImage}
-              alt="Product dashboard preview"
+            <motion.video
+              src={verisDemo}
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-full h-auto rounded-2xl shadow-2xl"
               initial={{ opacity: 0, scale: 0.96 }}
               whileInView={{ opacity: 1, scale: 1 }}

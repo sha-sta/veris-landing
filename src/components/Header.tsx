@@ -3,8 +3,9 @@ import { Shield, Menu } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
-      <div className="container mx-auto px-4">
+    <header className="sticky top-0 z-50 bg-gradient-to-br from-primary/5 to-accent/5 backdrop-blur supports-[backdrop-filter]:bg-gradient-to-br supports-[backdrop-filter]:from-primary/5 supports-[backdrop-filter]:to-accent/5">
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10" />
+      <div className="container mx-auto px-4 relative">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <h1 className="text-2xl font-bold">v e r i s</h1>
