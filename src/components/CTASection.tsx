@@ -26,10 +26,10 @@ const CTASection = () => {
           </motion.div>
 
           <motion.h2
-            className="text-3xl lg:text-5xl font-bold mb-6"
+            className="text-3xl lg:text-5xl font-bold text-white mb-6"
             variants={fadeInUp}
           >
-            Don't let scammers win.
+            Don&apos;t let scammers win.
           </motion.h2>
 
           <motion.p
